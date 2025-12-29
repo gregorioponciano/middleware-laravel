@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+
+<h2>Login</h2>
+
+<form method="POST" action="/login">
+    @csrf
+
+    <input type="email" name="email" placeholder="Email" required><br><br>
+    <input type="password" name="password" placeholder="Senha" required><br><br>
+
+    <button type="submit">Entrar</button>
+</form>
+
+<p>
+    Não tem conta?
+    <a href="/register">Cadastrar</a>
+</p>
+
+</body>
+</html>
